@@ -10,7 +10,9 @@ function App() {
     if (counter == 20) {
       counter=20
     } else {
-       setCounter(counter + 1);
+      setCounter(prevCounter => prevCounter + 1);
+      setCounter(prevCounter => prevCounter + 1);
+       setCounter(prevCounter => prevCounter + 1);
     }
    
     console.log("value clicked",counter);
